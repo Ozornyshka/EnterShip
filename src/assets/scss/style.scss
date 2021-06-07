@@ -1,0 +1,15 @@
+@import "reset";
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "container";
+@import "page";
+@import "flex-gap-mixin";
+@import "helpers";
+
+
+@import "layout/header";
+@import "first-block/first-block";
+@import "tickets/tickets";
+@import "form/form";
+@import "layout/footer";

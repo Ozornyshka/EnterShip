@@ -1,0 +1,88 @@
+.first-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: $blue;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  padding: 3rem 0;
+
+  #canvas {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &-slider {
+      margin-bottom: 7.5rem;
+
+
+      .item {}
+
+      svg {
+        width: 22.7rem;
+        height: 22.7rem;
+        fill: #fff;
+        stroke: #fff;
+      }
+    }
+
+    &-button {
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 2.5rem;
+
+
+      a {
+        height: 4.7rem;
+        width: 20.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #FFFFFF;
+        font-size: 16px;
+        // line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        border-radius: 8px;
+
+        &:hover {
+          background-color: $green;
+          border: none;
+        }
+      }
+    }
+
+    .es {
+      z-index: -1;
+      position: absolute;
+      top: 100px;
+      right: 25px;
+      font-size: 100px;
+      line-height: 120px;
+      color: rgba(91, 76, 76, 0.6);
+
+      .s {
+        position: absolute;
+        top: 70px;
+        left: 30px;
+
+      }
+    }
+
+    &-social {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+  }
+}

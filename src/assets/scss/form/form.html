@@ -1,0 +1,40 @@
+<div class="form" id="buyform">
+  <div class="container">
+    <div class="form__title">Cписки</div>
+    <div class="form__text">
+      Если в вашем Instagram хорошие охваты и вы готовы поддержать наш проект,
+      заполните форму - мы с вами свяжемся.
+    </div>
+    <form
+      action="call.php"
+      method="POST"
+      onsubmit="if(this.name.value==''){alert('Введите Ваше имя');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона');return false}return true;"
+    >
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="name"
+        placeholder="имя"
+        required
+      />
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        class="phone"
+        placeholder="телефон"
+        required
+      />
+      <input
+        type="text"
+        name="profile"
+        id="profile"
+        class="profile"
+        placeholder="ссылка на профиль"
+        required
+      />
+      <button type="submit" class="button">Отправить</button>
+    </form>
+  </div>
+</div>

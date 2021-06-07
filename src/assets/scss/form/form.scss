@@ -1,0 +1,89 @@
+.form {
+  background-color: $green;
+  padding: 7.4rem 0 2.4rem;
+  z-index: 10;
+  height: 92vh;
+  position: relative;
+  top: 0;
+  border-radius: 10px;
+  font-family: 'Stamps';
+  margin: 0 auto;
+
+
+  &__title {
+    font-size: 34px;
+    line-height: 33px;
+    text-align: left;
+    letter-spacing: 0.1px;
+    color: #1F1F22;
+    position: relative;
+    margin-bottom: 8rem;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 2px;
+      background-color: #1F1F22;
+      width: 100%;
+      bottom: -40px;
+
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 33px;
+    letter-spacing: 0.1px;
+    color: #1F1F22;
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 560px;
+
+    input {
+      padding: 8.5px 0;
+      margin-bottom: 7.5px;
+      background: transparent;
+      border-color: #7d838a;
+      border-top: none;
+      border-right: none;
+      border-bottom: 2px solid;
+      border-left: none;
+      font-size: 16px;
+      letter-spacing: 0.1px;
+
+      &::placeholder {
+        font-family: 'Stamps';
+        font-size: 16px;
+        line-height: 33px;
+        letter-spacing: 0.1px;
+        color: #1F1F22;
+      }
+
+
+    }
+
+    button {
+      background: #6CC724;
+      border-radius: 8px;
+      border: none;
+      width: 16rem;
+      height: 4.7rem;
+      color: #fff;
+      margin-top: 2.4rem;
+      font-family: 'Stamps';
+      line-height: 33px;
+      text-align: center;
+      letter-spacing: 0.1px;
+
+      &:hover {
+        background-color: initial;
+        border: 2px solid $black;
+        color: $black;
+      }
+    }
+  }
+}
